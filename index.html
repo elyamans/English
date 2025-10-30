@@ -1,27 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>My Train of Thought</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
     header { background: #2c3e50; color: #fff; padding: 1rem 0; text-align: center; }
     nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.2s; }
     nav a:hover { color: #18bc9c; }
-    main { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    main { max-width: 900px; margin: 30px auto 0; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     section { padding: 2rem; border-bottom: 1px solid #eee; }
     section:last-child { border-bottom: none; }
     h2 { color: #2c3e50; margin-top: 0; }
     img { max-width: 100%; border-radius: 6px; margin: 16px 0; box-shadow: 0 1px 6px rgba(44,62,80,0.08); }
     .work-list { display: flex; gap: 24px; flex-wrap: wrap; }
     .work-item { flex: 1 1 250px; background: #fafafa; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(44,62,80,0.05); margin-bottom: 16px; }
-    .work-item img { max-width: 100%; border-radius: 5px; }
-    footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; border-radius: 0 0 8px 8px; }
-    @media (max-width: 600px) {
-      nav a { display: block; margin: 10px 0; }
-      main { margin: 0; border-radius: 0; }
-      .work-list { flex-direction: column; gap: 0; }
+    .work-item img { max-width: 100%; border-radius: 6px; }
+    footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; margin-top: 24px; border-radius: 0 0 8px 8px; }
+
+    .open-work-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 6px;
+      border: none;
+      background: #2c3e50;
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -32,27 +40,33 @@
       <a href="#work">Work</a>
     </nav>
   </header>
+
   <main>
-   </section>
     <section id="work">
       <h2>My Work</h2>
       <p>Here is some of my English work:</p>
+
       <div class="work-list">
-        <div class="work-item">
+        <div class="work-item" data-project="1">
           <img src="photo1.jpg" alt="Project 1">
           <h3>Project Title 1</h3>
           <p>A short description of your first project. Highlight what makes it interesting!</p>
+          <a class="open-work-button" href="project1.html" target="_blank" rel="noopener noreferrer" aria-label="Open Project 1">View Project 1</a>
         </div>
-        <div class="work-item">
+
+        <div class="work-item" data-project="2">
           <img src="photo2.jpg" alt="Project 2">
           <h3>Project Title 2</h3>
           <p>A short description of your second project. You can add more items as needed.</p>
+          <a class="open-work-button" href="project2.html" target="_blank" rel="noopener noreferrer" aria-label="Open Project 2">View Project 2</a>
         </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 Elyaman | TofT</p>
+    <p>© 2025 | TofT</p>
   </footer>
 </body>
 </html>
+
