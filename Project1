@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 1</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 2rem;">
+  <h1>Project 1</h1>
+  <p>This is the dedicated page for Project 1.</p>
+  <a href="index.html">← Back to main page</a>
+</body>
+</html>
